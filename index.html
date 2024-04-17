@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>DailyTasks.com</title>
+    
+</head>
+<body>
+   
+    <div class="hero center" id="heroDiv">
+        <h1 class="heading">Daily-Tasks Scheduler</h1>
+
+    <form action="" onsubmit="makeReminder(event)" id="myForm">
+    <!-- Main info input box -->
+        <input type="text" name="info" id="text-info" placeholder="Enter the event information"  class="data" required>
+        <input type="submit" value="Submit" id="submit">
+    <!-- date input box -->
+    <section class="section1">
+        <label for="myDate" class="dateBox" >Select a Date</label>
+        <label for="myDate" class="timeBox" >Select Time</label>
+        <label for="myDate" class="priBox">Select Priority</label>
+    </section>
+    <section class="section2">
+        <input style="width: 10vw;" type="date" name="Date" id="myDate" class="data" onchange="setMinTime()" required>
+        <input style="width: 10vw;" type="time" name="Time" id="myTime" class="data" onchange="setMinTime()" required>
+       <select style="width: 11vw;" name="Priority" id="myPrior" class="data Emergency">
+        <option value=" "></option>
+        <option value="Emergency">Emergency</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+        </select>
+    </section>
+    </form>
+    <!-- task tracker -->
+       <p class="tracker">0 tasks to be completed </p>
+    </div>
+    <script src="mainCode.js">
+   
+    </script>
+</body>
+</html>
