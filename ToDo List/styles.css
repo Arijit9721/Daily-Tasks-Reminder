@@ -1,0 +1,180 @@
+
+body{
+    background:#ed8906;
+}
+/* class to center a text */
+.center{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+/* the main div */
+.hero{
+    background-color: beige;
+    width: 93%;
+    height: 55vh;
+    position: relative;
+    top: -1vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: -1vh;
+}
+/* the main heading section */
+.heading{
+    text-align: center;
+    font-size: 60px;
+    position: relative;
+    top:3vh;
+    color: brown;
+}
+
+/* The details entering section */
+form{
+    text-align: center;
+    position: relative;
+}
+
+#text-info{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    outline: 0;
+    border: 0;
+    border-bottom: 3px solid gray;
+    border-radius: 2px;
+    width: 60%;
+    background-color: beige;
+    color: brown;
+    padding-top: 3vh;
+    font-size: 23px;
+    margin-bottom: 5px;
+    text-indent: 25px;
+    transform: translateX(-40px);
+}
+
+#submit{
+    border: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position:absolute;
+    font-size: 21px;
+    padding: 10px;
+    transform: translateX(-25px);
+    color: white;
+    background-color:#005249;
+    top: 22px;
+    border-radius: 200px;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+/* The label part */
+.section1{
+    text-align: left;
+    margin-left: 4vw;
+    padding-left: 3vw;
+    padding-top: 10px;
+}
+.dateBox{
+   margin-left: 0.5vw; 
+   color: brown;
+   font-weight: 800;
+   font-size: 1.5vw;
+}
+.timeBox{
+    margin-left: 16.5vw;
+    color: brown;
+    font-weight: 800;
+    font-size: 1.5vw;
+ }
+
+ .priBox{
+    margin-left:  17.2vw; ;
+    color: brown;
+    font-weight: 800;
+    font-size: 1.5vw;
+ }
+ /* the input boxes part */
+ .section2{
+    text-align: left;
+    margin-left: 4vw;
+    padding-left: 3vw;
+    padding-bottom: none;
+ }
+#myTime{
+    margin-left: 14vw;
+}
+#myPrior{
+    margin-left: 14vw; 
+    background-color: white;
+}
+
+/* task tracker part */
+.tracker{
+    position: absolute;
+    left: 25vw;
+    font-size: 3.5vw;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(97, 11, 235);
+    font-weight: 700;
+    margin-top: 8vh;
+}
+
+/* creating a new task */
+.newDiv{
+    background-color:#FFFBF1;
+    width: 95%;
+    height: 80%;
+    text-align: left;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: normal;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+    border-radius: 20px;
+    transform: translateY(2vh);
+}
+.newDiv p{
+   
+    color: rgb(2, 0, 6);
+    font-size: 1.6vw;
+    font-weight: 600;
+    margin-left: 1vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transform: translateY(2vh);
+    flex: 1;
+}
+
+.newDiv :nth-child(3){
+    position: relative;
+    transform: translateY(1.6vh);
+    font-size: 1.6vw;
+    margin-left: -9vw;
+    text-align: left;
+}
+.newDiv :nth-child(4){
+    position: relative;   
+    margin-left: -1vw;
+    text-align: left;
+}
+.increaseDiv{
+    background-color: beige;
+    width: 93%;
+    height: 17vh;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
+   
+}
+.divEditButton{
+    transform: translateY(3vh);
+    height: 7vh;
+    width:4vw;
+    position: absolute;
+    right: 8vw;
+}
+
+.divDeleteButton{
+    transform: translateY(3vh);
+    height: 7vh;
+    width:4vw;
+    position: absolute;
+    right: 3vw;
+}
